@@ -1,60 +1,18 @@
-<svg width="850" height="140" viewBox="0 0 850 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Background Gradient (Deep Abyssal Blue to Black) -->
-    <linearGradient id="bg_grad" x1="0" y1="0" x2="850" y2="140" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#050a10" />
-      <stop offset="50%" stop-color="#081420" />
-      <stop offset="100%" stop-color="#04080d" />
-    </linearGradient>
+<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background: deep submerged dark palette matching avatar -->
+  <rect width="800" height="110" rx="8" fill="#070c12" stroke="#14212e" stroke-width="1.2" />
 
-    <!-- Neon Cyan Linear Gradient -->
-    <linearGradient id="cyan_beam" x1="0" y1="0" x2="850" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0" />
-      <stop offset="25%" stop-color="#00e5ff" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
-      <stop offset="75%" stop-color="#00e5ff" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0" />
-    </linearGradient>
+  <!-- Accent vertical indicator line -->
+  <rect x="28" y="32" width="3" height="46" rx="1.5" fill="#38bdf8" fill-opacity="0.85" />
 
-    <!-- Text Glow -->
-    <filter id="neon_glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+  <!-- Username / Handle -->
+  <text x="44" y="55" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace" font-size="24" font-weight="700" fill="#f1f5f9" letter-spacing="1">0xf-0</text>
 
-    <pattern id="hex_dot_grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="12" r="0.8" fill="#38bdf8" fill-opacity="0.12" />
-    </pattern>
-  </defs>
+  <!-- Tagline / Subtitle -->
+  <text x="45" y="74" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#64748b" letter-spacing="0.8">windows internals · binary analysis · reverse engineering</text>
 
-  <!-- Base Plate -->
-  <rect width="850" height="140" rx="12" fill="url(#bg_grad)" stroke="#16293d" stroke-width="1.2" />
-
-  <!-- Dotted Matrix Grid Overlay -->
-  <rect width="850" height="140" rx="12" fill="url(#hex_dot_grid)" />
-
-  <!-- Corner Crosshairs / Reticles -->
-  <path d="M 24 16 L 24 28 M 18 22 L 30 22" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.5" />
-  <path d="M 826 16 L 826 28 M 820 22 L 832 22" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.5" />
-  <path d="M 24 112 L 24 124 M 18 118 L 30 118" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.5" />
-  <path d="M 826 112 L 826 124 M 820 118 L 832 118" stroke="#00e5ff" stroke-width="1.2" stroke-opacity="0.5" />
-
-  <!-- Subtle Assembly Background Watermark (Left & Right) -->
-  <text x="40" y="55" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">mov r10, rcx</text>
-  <text x="40" y="75" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">mov eax, 0x18</text>
-  <text x="40" y="95" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">syscall</text>
-
-  <text x="730" y="55" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">0xFF 0x25</text>
-  <text x="730" y="75" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">0x48 0x8B</text>
-  <text x="730" y="95" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#38bdf8" fill-opacity="0.12">0x90 0xC3</text>
-
-  <!-- Glowing Monogram -->
-  <text x="425" y="72" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="38" font-weight="900" fill="#f8fafc" letter-spacing="6" filter="url(#neon_glow)">0xf-0</text>
-
-  <!-- Horizontal Neon Laser Divider -->
-  <rect x="180" y="86" width="490" height="1.5" fill="url(#cyan_beam)" />
-  <circle cx="425" cy="86.7" r="2.5" fill="#38bdf8" />
-
-  <!-- Subtitle -->
-  <text x="425" y="108" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#7dd3fc" letter-spacing="3.5">BINARY ANALYSIS // WINDOWS INTERNALS</text>
+  <!-- Subtle status tag on right side -->
+  <rect x="702" y="44" width="70" height="22" rx="4" fill="#0d1824" stroke="#1a2e42" stroke-width="1" />
+  <circle cx="715" cy="55" r="3" fill="#38bdf8" />
+  <text x="724" y="59" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#7dd3fc" letter-spacing="0.5">x86_64</text>
 </svg>
