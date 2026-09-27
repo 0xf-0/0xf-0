@@ -1,9 +1,3 @@
-<div align="center">
-  <img src="./banner.svg" alt="0xf-0" width="100%" />
-</div>
-
-<br/>
-
 low-level security research, binary instrumentation, and windows internals.
 
 ### projects
